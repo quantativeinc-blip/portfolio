@@ -1,19 +1,18 @@
-// Quantitative Inc. - Minimal Vanilla JavaScript
+// Interactive scripts for Quantitative Inc.
+document.addEventListener('DOMContentLoaded', function () {
+  console.log('Quantitative Inc. site loaded.');
 
-document.addEventListener('DOMContentLoaded', () => {
-  // 1. Auto-update Footer Copyright Year
-  const yearEl = document.getElementById('year');
-  if (yearEl) {
-    yearEl.textContent = new Date().getFullYear();
-  }
-
-  // 2. Handle Contact Form Submission
-  const contactForm = document.getElementById('contactForm');
-  if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
+  // Smooth scroll for internal navigation links
+  const links = document.querySelectorAll('a[href^="#"]');
+  links.forEach(link => {
+    link.addEventListener('click', function (e) {
       e.preventDefault();
-      alert('Thank you for contacting Quantitative Inc.! An Aberdeen representative will reach out to you shortly.');
-      contactForm.reset();
+      const targetId = this.getAttribute('href');
+      if (targetId === '#') return;
+      const targetElement = document.querySelector(targetId);
+      if (targetElement) {
+        targetElement.scrollIntoView({ behavior: 'smooth' });
+      }
     });
-  }
+  });
 });
