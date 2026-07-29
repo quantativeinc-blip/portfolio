@@ -3,379 +3,68 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Quantitative Inc. | High-Performance Web Development in Aberdeen</title>
-  <meta name="description" content="Quantitative Inc. builds high-performance custom web solutions for local businesses in Aberdeen, Scotland.">
-  
-  <!-- Tailwind CSS via CDN for fast responsive utility styling -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            brandLavender: '#FAF0FA',
-            brandPurple: '#6200EE',
-            brandPurpleHover: '#5200C9',
-            brandDark: '#220042',
-            brandPink: '#E040FB',
-            brandBorder: '#F0D6FA',
-          }
-        }
-      }
-    }
-  </script>
-
-  <!-- Google Fonts: Plus Jakarta Sans -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  
-  <!-- External Custom Stylesheet -->
+  <title>Quantitative Inc. | Aberdeen Web Engineering</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-[#FAF0FA] text-[#220042] font-sans antialiased selection:bg-[#6200EE] selection:text-white">
+<body>
 
-  <!-- Header / Navigation Bar -->
-  <header class="sticky top-0 z-50 bg-[#FAF0FA]/90 backdrop-blur-md border-b border-[#F0D6FA] transition-all">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-      
-      <!-- Quantitative Inc. Logo (Matching Brand Visual Reference) -->
-      <a href="#" class="flex items-center gap-3 group">
-        <div class="w-10 h-10 bg-[#6200EE] text-white font-black flex items-center justify-center rounded-2xl rounded-br-sm shadow-md group-hover:scale-105 transition-transform">
-          <span class="tracking-tighter text-lg">QI</span>
-        </div>
-        <div class="flex flex-col">
-          <span class="text-2xl font-bold text-[#6200EE] tracking-tight leading-none">Quantitative <span class="font-semibold text-[#6200EE]/90">Inc</span></span>
-          <span class="text-xs text-[#220042]/70 font-medium">Aberdeen Web Studio</span>
-        </div>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="#" class="logo">
+        <span class="logo-badge">QI</span>
+        <span class="logo-text">Quantitative <strong>Inc.</strong></span>
       </a>
-
-      <!-- Desktop Navigation Menu -->
-      <nav class="hidden md:flex items-center gap-8 font-semibold text-[#220042]/85 text-sm">
-        <a href="#services" class="hover:text-[#6200EE] transition-colors">Services</a>
-        <a href="#projects" class="hover:text-[#6200EE] transition-colors">Projects</a>
-        <a href="#estimator" class="hover:text-[#6200EE] transition-colors">Cost Estimator</a>
-        <a href="#aberdeen" class="hover:text-[#6200EE] transition-colors">About Aberdeen</a>
-        <a href="#contact" class="hover:text-[#6200EE] transition-colors">Contact</a>
+      <nav class="nav-menu">
+        <a href="#services">Services</a>
+        <a href="#snippets">Snippets</a>
+        <a href="#estimator">Estimator</a>
+        <a href="#contact" class="btn btn-primary">Contact Us</a>
       </nav>
-
-      <!-- CTA Button -->
-      <div class="flex items-center gap-3">
-        <a href="https://wa.me/447000000000?text=Hi%20Quantitative%20Inc%2C%20I'd%20like%20to%20get%20started%20on%20a%20website%20project%20in%20Aberdeen." 
-           target="_blank" 
-           rel="noopener noreferrer"
-           class="inline-flex items-center gap-2 bg-[#6200EE] hover:bg-[#5200C9] text-white font-bold text-xs sm:text-sm px-5 py-2.5 rounded-full shadow-lg shadow-[#6200EE]/20 transition-all hover:-translate-y-0.5">
-          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l.211.336-1.032 3.765 3.856-1.011.328.177z"/></svg>
-          Get Started
-        </a>
-      </div>
     </div>
   </header>
 
   <!-- Hero Section -->
-  <section class="relative py-16 sm:py-24 lg:py-28 overflow-hidden gradient-brand-hero">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-      <div class="grid lg:grid-cols-12 gap-12 items-center">
-        
-        <!-- Hero Left Column -->
-        <div class="lg:col-span-7 space-y-8 text-center lg:text-left">
-          <div class="inline-flex items-center gap-2 bg-white/90 border border-[#F0D6FA] rounded-full px-4 py-1.5 text-xs font-bold text-[#6200EE] shadow-sm">
-            <span>📍 Based in Aberdeen, Scotland</span>
-            <span class="w-1.5 h-1.5 rounded-full bg-[#E040FB] animate-pulse"></span>
-            <span class="text-[#220042]/70">Local Web Studio</span>
-          </div>
-
-          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-[#220042] tracking-tight leading-[1.15]">
-            Building High-Performance Web Solutions for <span class="text-[#6200EE]">Aberdeen Businesses</span>
-          </h1>
-
-          <p class="text-lg sm:text-xl text-[#220042]/80 max-w-2xl mx-auto lg:mx-0 font-medium leading-relaxed">
-            Quantitative Inc. crafts fast, mobile-responsive custom websites engineered to turn local site visitors into paying customers. Simple, effective, and built for growth.
-          </p>
-
-          <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
-            <a href="https://wa.me/447000000000?text=Hi%20Quantitative%20Inc%2C%20I'd%20like%20to%20discuss%20a%20website%20project." 
-               target="_blank"
-               rel="noopener noreferrer"
-               class="w-full sm:w-auto text-center bg-[#6200EE] hover:bg-[#5200C9] text-white font-extrabold text-base px-8 py-4 rounded-full shadow-xl shadow-[#6200EE]/25 transition-all hover:-translate-y-1">
-              💬 Start WhatsApp Chat
-            </a>
-            <a href="#projects" 
-               class="w-full sm:w-auto text-center bg-white hover:bg-[#F5E5F9] text-[#220042] border border-[#F0D6FA] font-bold text-base px-8 py-4 rounded-full shadow-sm transition-all hover:-translate-y-0.5">
-              View Our Work ↓
-            </a>
-          </div>
-
-          <!-- Trust Signals -->
-          <div class="pt-8 border-t border-[#F0D6FA] grid grid-cols-3 gap-4 text-center">
-            <div class="p-3 bg-white/70 rounded-2xl border border-[#F0D6FA]">
-              <div class="text-2xl sm:text-3xl font-black text-[#6200EE]">100%</div>
-              <div class="text-xs text-[#220042]/75 font-semibold mt-0.5">PageSpeed Score</div>
-            </div>
-            <div class="p-3 bg-white/70 rounded-2xl border border-[#F0D6FA]">
-              <div class="text-2xl sm:text-3xl font-black text-[#6200EE]">Aberdeen</div>
-              <div class="text-xs text-[#220042]/75 font-semibold mt-0.5">Dedicated Team</div>
-            </div>
-            <div class="p-3 bg-white/70 rounded-2xl border border-[#F0D6FA]">
-              <div class="text-2xl sm:text-3xl font-black text-[#6200EE]">Instant</div>
-              <div class="text-xs text-[#220042]/75 font-semibold mt-0.5">WhatsApp Leads</div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Hero Right Mockup Card -->
-        <div class="lg:col-span-5 relative">
-          <div class="bg-white/85 backdrop-blur-xl border border-[#F0D6FA] rounded-3xl p-6 sm:p-8 shadow-2xl space-y-6">
-            <div class="flex items-center justify-between pb-4 border-b border-[#F0D6FA]">
-              <div class="flex items-center gap-2">
-                <span class="w-3 h-3 rounded-full bg-red-400"></span>
-                <span class="w-3 h-3 rounded-full bg-yellow-400"></span>
-                <span class="w-3 h-3 rounded-full bg-green-400"></span>
-              </div>
-              <span class="text-xs font-bold text-[#6200EE] bg-[#FAF0FA] px-3 py-1 rounded-full border border-[#F0D6FA]">quantitative-inc.co.uk</span>
-            </div>
-
-            <div class="space-y-4">
-              <div class="p-4 rounded-2xl bg-[#FAF0FA] border border-[#F0D6FA] flex items-center justify-between">
-                <div>
-                  <p class="text-xs text-[#220042]/60 font-semibold uppercase">Local Traffic Growth</p>
-                  <p class="text-2xl font-black text-[#6200EE]">+240% Inquiries</p>
-                </div>
-                <div class="w-12 h-12 rounded-2xl bg-[#6200EE] text-white flex items-center justify-center font-bold text-xl">📈</div>
-              </div>
-
-              <div class="p-4 rounded-2xl bg-white border border-[#F0D6FA] space-y-2">
-                <div class="flex justify-between text-xs font-bold text-[#220042]">
-                  <span>Mobile & Desktop Speed</span>
-                  <span class="text-[#E040FB]">100 / 100</span>
-                </div>
-                <div class="w-full bg-[#FAF0FA] rounded-full h-2.5">
-                  <div class="bg-gradient-to-r from-[#6200EE] to-[#E040FB] h-2.5 rounded-full w-full"></div>
-                </div>
-              </div>
-
-              <div class="bg-[#220042] text-white p-5 rounded-2xl space-y-3">
-                <div class="flex justify-between items-center text-xs text-[#E040FB] font-bold">
-                  <span>ABERDEEN SPECIAL OFFER</span>
-                  <span class="bg-white/20 px-2 py-0.5 rounded-full">Limited</span>
-                </div>
-                <p class="text-sm font-semibold text-purple-100">Free Website Audit & Mobile Strategy for Aberdeen businesses this month.</p>
-                <a href="#contact" class="inline-block w-full text-center bg-[#E040FB] hover:bg-[#d030eb] text-white text-xs font-bold py-2.5 rounded-xl transition-colors">Claim Free Audit</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Services Section -->
-  <section id="services" class="py-20 bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
-        <span class="text-xs font-extrabold text-[#6200EE] uppercase tracking-widest bg-[#FAF0FA] border border-[#F0D6FA] px-4 py-1.5 rounded-full">Services Offerings</span>
-        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black text-[#220042]">What Quantitative Inc. Delivers</h2>
-        <p class="text-base text-[#220042]/75">Tailored specifically for local businesses, cafes, contractors, and startups in Aberdeen.</p>
-      </div>
-
-      <div class="grid md:grid-cols-3 gap-8">
-        <!-- Service 1 -->
-        <div class="bg-[#FAF0FA] border border-[#F0D6FA] rounded-3xl p-8 space-y-5 hover:border-[#6200EE] transition-all hover:-translate-y-1">
-          <div class="w-14 h-14 rounded-2xl bg-[#6200EE] text-white flex items-center justify-center text-2xl font-bold shadow-md">💻</div>
-          <h3 class="text-xl font-bold text-[#220042]">Custom Web Development</h3>
-          <p class="text-sm text-[#220042]/75 leading-relaxed">
-            Bespoke HTML5, CSS3, and JavaScript websites built from scratch to load lightning fast without bloated subscription software.
-          </p>
-          <ul class="space-y-2 text-xs font-semibold text-[#220042]/85">
-            <li>✓ 100% Mobile & Desktop Responsive</li>
-            <li>✓ Sub-second Load Times</li>
-            <li>✓ Clean Accessible Code</li>
-          </ul>
-        </div>
-
-        <!-- Service 2 -->
-        <div class="bg-[#FAF0FA] border border-[#F0D6FA] rounded-3xl p-8 space-y-5 hover:border-[#6200EE] transition-all hover:-translate-y-1">
-          <div class="w-14 h-14 rounded-2xl bg-[#6200EE] text-white flex items-center justify-center text-2xl font-bold shadow-md">🚀</div>
-          <h3 class="text-xl font-bold text-[#220042]">High-Converting Landing Pages</h3>
-          <p class="text-sm text-[#220042]/75 leading-relaxed">
-            Targeted single-page websites engineered to convert Aberdeen search visitors directly into phone and WhatsApp leads.
-          </p>
-          <ul class="space-y-2 text-xs font-semibold text-[#220042]/85">
-            <li>✓ One-Click WhatsApp Integration</li>
-            <li>✓ Lead Generation Form Setup</li>
-            <li>✓ Clear Call-To-Action Layouts</li>
-          </ul>
-        </div>
-
-        <!-- Service 3 -->
-        <div class="bg-[#FAF0FA] border border-[#F0D6FA] rounded-3xl p-8 space-y-5 hover:border-[#6200EE] transition-all hover:-translate-y-1">
-          <div class="w-14 h-14 rounded-2xl bg-[#6200EE] text-white flex items-center justify-center text-2xl font-bold shadow-md">📍</div>
-          <h3 class="text-xl font-bold text-[#220042]">Aberdeen Digital Presence</h3>
-          <p class="text-sm text-[#220042]/75 leading-relaxed">
-            Local search engine optimization (SEO) and Google Maps setup to ensure Aberdeen customers find your brand first.
-          </p>
-          <ul class="space-y-2 text-xs font-semibold text-[#220042]/85">
-            <li>✓ Aberdeen Local Keyword Setup</li>
-            <li>✓ Instant GitHub Pages Hosting</li>
-            <li>✓ Google Business Profile Link</li>
-          </ul>
+  <section class="hero-section">
+    <div class="container hero-container">
+      <div class="hero-text">
+        <span class="badge">Aberdeen Web Development</span>
+        <h1>Custom Websites Built With Pure <span class="highlight">HTML, CSS & JavaScript</span></h1>
+        <p>High-performance web solutions for businesses in Aberdeen and Scotland. No monthly platform lock-ins.</p>
+        <div class="hero-buttons">
+          <a href="mailto:quantativeinc@gmail.com" class="btn btn-primary">Email Us</a>
+          <a href="#snippets" class="btn btn-secondary">View Code Snippets</a>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projects" class="py-20 bg-[#FAF0FA]">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
-        <span class="text-xs font-extrabold text-[#6200EE] uppercase tracking-widest bg-white border border-[#F0D6FA] px-4 py-1.5 rounded-full">Portfolio Showcase</span>
-        <h2 class="text-3xl sm:text-4xl font-black text-[#220042]">Recent Aberdeen Projects</h2>
-        <p class="text-base text-[#220042]/70">Explore clean website mockups engineered by Quantitative Inc.</p>
-      </div>
-
-      <div class="grid md:grid-cols-3 gap-8">
-        <!-- Project 1 -->
-        <div class="bg-white border border-[#F0D6FA] rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all">
-          <div class="h-48 bg-gradient-to-br from-[#6200EE] to-[#220042] p-6 text-white flex flex-col justify-between">
-            <span class="text-xs font-bold bg-white/20 px-3 py-1 rounded-full w-max">Hospitality</span>
-            <h3 class="text-2xl font-bold">Aberdeen Granite Grind</h3>
+      <div class="hero-preview">
+        <div class="code-card">
+          <div class="code-header">
+            <span>index.html</span>
           </div>
-          <div class="p-6 space-y-4">
-            <p class="text-sm text-[#220042]/75">Single-page cafe website featuring digital coffee menus and instant click-to-WhatsApp bean orders.</p>
-            <div class="flex flex-wrap gap-2 text-xs font-semibold text-[#6200EE]">
-              <span class="bg-[#FAF0FA] px-3 py-1 rounded-full border border-[#F0D6FA]">HTML5 / CSS3</span>
-              <span class="bg-[#FAF0FA] px-3 py-1 rounded-full border border-[#F0D6FA]">WhatsApp Order</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 2 -->
-        <div class="bg-white border border-[#F0D6FA] rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all">
-          <div class="h-48 bg-gradient-to-br from-[#E040FB] to-[#6200EE] p-6 text-white flex flex-col justify-between">
-            <span class="text-xs font-bold bg-white/20 px-3 py-1 rounded-full w-max">Clean Energy</span>
-            <h3 class="text-2xl font-bold">Deeside Eco Tech</h3>
-          </div>
-          <div class="p-6 space-y-4">
-            <p class="text-sm text-[#220042]/75">Landing page for a solar panel installer with an interactive ROI calculator built in vanilla JavaScript.</p>
-            <div class="flex flex-wrap gap-2 text-xs font-semibold text-[#6200EE]">
-              <span class="bg-[#FAF0FA] px-3 py-1 rounded-full border border-[#F0D6FA]">Vanilla JS</span>
-              <span class="bg-[#FAF0FA] px-3 py-1 rounded-full border border-[#F0D6FA]">Local SEO</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 3 -->
-        <div class="bg-white border border-[#F0D6FA] rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all">
-          <div class="h-48 bg-gradient-to-br from-[#220042] to-[#6200EE] p-6 text-white flex flex-col justify-between">
-            <span class="text-xs font-bold bg-white/20 px-3 py-1 rounded-full w-max">Artisan Trades</span>
-            <h3 class="text-2xl font-bold">Highland Bespoke Joinery</h3>
-          </div>
-          <div class="p-6 space-y-4">
-            <p class="text-sm text-[#220042]/75">Minimalist woodwork showcase gallery with high-res project photo grid and fast quote form.</p>
-            <div class="flex flex-wrap gap-2 text-xs font-semibold text-[#6200EE]">
-              <span class="bg-[#FAF0FA] px-3 py-1 rounded-full border border-[#F0D6FA]">Responsive Grid</span>
-              <span class="bg-[#FAF0FA] px-3 py-1 rounded-full border border-[#F0D6FA]">GitHub Pages</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Aberdeen Section -->
-  <section id="aberdeen" class="py-20 bg-white border-y border-[#F0D6FA]">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="bg-[#FAF0FA] border border-[#F0D6FA] rounded-3xl p-8 sm:p-12 space-y-6">
-        <span class="text-xs font-extrabold text-[#6200EE] uppercase tracking-widest bg-white border border-[#F0D6FA] px-4 py-1.5 rounded-full inline-block">Aberdeen Local Focus</span>
-        <h2 class="text-3xl sm:text-4xl font-black text-[#220042]">Based in Aberdeen, Serving Scotland</h2>
-        <p class="text-base text-[#220042]/80 leading-relaxed max-w-3xl">
-          Quantitative Inc. is based in Aberdeen. We meet directly with local business owners in person or over video call to deliver web strategies tailored to the North East Scottish market.
-        </p>
-        <div class="flex items-center gap-4 text-xs font-bold text-[#6200EE]">
-          <span>📍 Aberdeen & Aberdeenshire</span>
-          <span>•</span>
-          <span>✉️ quantativeinc@gmail.com</span>
+          <pre><code>&lt;header class="site-header"&gt;
+  &lt;h1&gt;Quantitative Inc.&lt;/h1&gt;
+  &lt;a href="mailto:quantativeinc@gmail.com"&gt;Contact&lt;/a&gt;
+&lt;/header&gt;</code></pre>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="py-20 bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid lg:grid-cols-12 gap-12 items-center">
-        
-        <div class="lg:col-span-6 space-y-6">
-          <span class="text-xs font-extrabold text-[#6200EE] uppercase tracking-widest bg-[#FAF0FA] border border-[#F0D6FA] px-4 py-1.5 rounded-full">Contact Us</span>
-          <h2 class="text-3xl sm:text-4xl font-black text-[#220042]">Connect with Quantitative Inc.</h2>
-          <p class="text-base text-[#220042]/75 leading-relaxed">
-            Reach out directly via WhatsApp for instant responses or drop us an email with your project details.
-          </p>
-
-          <div class="space-y-4">
-            <a href="https://wa.me/447000000000" target="_blank" class="flex items-center gap-4 p-5 rounded-2xl bg-[#FAF0FA] border border-[#F0D6FA] hover:border-[#6200EE] transition-all">
-              <div class="w-12 h-12 rounded-xl bg-[#6200EE] text-white flex items-center justify-center font-bold text-xl">💬</div>
-              <div>
-                <p class="text-xs text-[#220042]/60 font-bold uppercase">WhatsApp Business</p>
-                <p class="text-lg font-black text-[#6200EE]">+44 7000 000000</p>
-              </div>
-            </a>
-
-            <a href="mailto:quantativeinc@gmail.com" class="flex items-center gap-4 p-5 rounded-2xl bg-[#FAF0FA] border border-[#F0D6FA] hover:border-[#6200EE] transition-all">
-              <div class="w-12 h-12 rounded-xl bg-[#E040FB] text-white flex items-center justify-center font-bold text-xl">✉️</div>
-              <div>
-                <p class="text-xs text-[#220042]/60 font-bold uppercase">Direct Email</p>
-                <p class="text-lg font-black text-[#220042]">quantativeinc@gmail.com</p>
-              </div>
-            </a>
-          </div>
-        </div>
-
-        <!-- Contact Form -->
-        <div class="lg:col-span-6 bg-[#FAF0FA] border border-[#F0D6FA] rounded-3xl p-8 shadow-xl">
-          <form id="contactForm" class="space-y-4">
-            <h3 class="text-2xl font-black text-[#220042]">Send a Quick Message</h3>
-            <div>
-              <label class="block text-xs font-bold text-[#220042] uppercase mb-1">Your Name</label>
-              <input type="text" required placeholder="Fiona Smith" class="w-full bg-white border border-[#F0D6FA] rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-[#6200EE]">
-            </div>
-            <div>
-              <label class="block text-xs font-bold text-[#220042] uppercase mb-1">Business Name (Aberdeen)</label>
-              <input type="text" placeholder="Granite City Enterprise" class="w-full bg-white border border-[#F0D6FA] rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-[#6200EE]">
-            </div>
-            <div>
-              <label class="block text-xs font-bold text-[#220042] uppercase mb-1">Email or Phone</label>
-              <input type="text" required placeholder="fiona@example.co.uk" class="w-full bg-white border border-[#F0D6FA] rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-[#6200EE]">
-            </div>
-            <div>
-              <label class="block text-xs font-bold text-[#220042] uppercase mb-1">Project Details</label>
-              <textarea rows="4" placeholder="Tell us about your website requirements..." class="w-full bg-white border border-[#F0D6FA] rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-[#6200EE]"></textarea>
-            </div>
-            <button type="submit" class="w-full bg-[#6200EE] hover:bg-[#5200C9] text-white font-extrabold py-4 rounded-xl shadow-lg transition-all">
-              Send Project Enquiry
-            </button>
-          </form>
-        </div>
-
-      </div>
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <h2>Contact Quantitative Inc.</h2>
+      <p>Send your project details directly to: <a href="mailto:quantativeinc@gmail.com"><strong>quantativeinc@gmail.com</strong></a></p>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-[#220042] text-white py-12 border-t border-white/10">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6">
-      <div class="flex items-center gap-3">
-        <div class="w-10 h-10 bg-[#6200EE] text-white font-black flex items-center justify-center rounded-2xl rounded-br-sm text-sm">QI</div>
-        <span class="text-xl font-bold tracking-tight">Quantitative Inc.</span>
-      </div>
-      <p class="text-xs text-purple-200/80 text-center sm:text-right">
-        © <span id="year">2026</span> Quantitative Inc. All rights reserved. Headquartered in Aberdeen, Scotland.
-      </p>
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Quantitative Inc. Based in Aberdeen, Scotland.</p>
     </div>
   </footer>
 
-  <!-- Vanilla JavaScript -->
   <script src="script.js"></script>
 </body>
 </html>
