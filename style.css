@@ -1,0 +1,34 @@
+/* Quantitative Inc. - Brand & Custom CSS Palette */
+
+:root {
+  --bg-lavender: #FAF0FA;
+  --primary-purple: #6200EE;
+  --primary-purple-hover: #5200C9;
+  --dark-violet: #220042;
+  --accent-pink: #E040FB;
+  --border-light-purple: #F0D6FA;
+}
+
+body {
+  background-color: var(--bg-lavender);
+  color: var(--dark-violet);
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Hero Background Gradient */
+.gradient-brand-hero {
+  background: linear-gradient(135deg, #FAF0FA 0%, #F5E5F9 50%, #FAF0FA 100%);
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom QI Logo shape */
+.qi-badge-shape {
+  background: linear-gradient(135deg, #6200EE 0%, #5200C9 100%);
+  border-radius: 14px 14px 4px 14px;
+}
