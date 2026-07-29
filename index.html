@@ -1,70 +1,523 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Quantitative Inc. | Aberdeen Web Engineering</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quantitive Inc | Aberdeen Web Design</title>
+  <meta name="description" content="Quantitive Inc is a sleek web design studio based locally in Aberdeen, Scotland. Custom bespoke web design, clean code, and fast performance." />
+  
+  <!-- Pure CSS Stylesheet -->
+  <link rel="stylesheet" href="/style.css" />
 </head>
 <body>
 
-  <!-- Header -->
+  <!-- SITE HEADER -->
   <header class="site-header">
     <div class="container header-container">
-      <a href="#" class="logo">
-        <span class="logo-badge">QI</span>
-        <span class="logo-text">Quantitative <strong>Inc.</strong></span>
+      
+      <!-- QI Logo -->
+      <a href="#" class="brand-logo" aria-label="Quantitive Inc Home">
+        <div class="logo-icon">QI</div>
+        <div class="logo-text-wrap">
+          <span class="brand-name">Quantitive Inc</span>
+          <span class="brand-sub">Aberdeen • Web Design</span>
+        </div>
       </a>
-      <nav class="nav-menu">
-        <a href="#services">Services</a>
-        <a href="#snippets">Snippets</a>
-        <a href="#estimator">Estimator</a>
-        <a href="#contact" class="btn btn-primary">Contact Us</a>
+
+      <!-- Navigation Links -->
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-links">
+          <li><a href="#services">Services</a></li>
+          <li><a href="#code-snippets">Code & Layouts</a></li>
+          <li><a href="#palette">Color Palette</a></li>
+          <li><a href="#about">Local Studio</a></li>
+          <li><a href="#whatsapp">Contact</a></li>
+        </ul>
       </nav>
+
+      <!-- Header Right Action -->
+      <div class="nav-right">
+        <div class="location-badge">
+          <span class="dot-online"></span>
+          <span>Aberdeen, Local Studio</span>
+        </div>
+
+        <button onclick="openWhatsAppModal('Hi Quantitive Inc! I would like to chat about a web design project in Aberdeen.')" class="btn btn-whatsapp">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          <span>WhatsApp Us</span>
+        </button>
+      </div>
+
     </div>
   </header>
 
-  <!-- Hero Section -->
+  <!-- HERO SECTION -->
   <section class="hero-section">
-    <div class="container hero-container">
-      <div class="hero-text">
-        <span class="badge">Aberdeen Web Development</span>
-        <h1>Custom Websites Built With Pure <span class="highlight">HTML, CSS & JavaScript</span></h1>
-        <p>High-performance web solutions for businesses in Aberdeen and Scotland. No monthly platform lock-ins.</p>
-        <div class="hero-buttons">
-          <a href="mailto:quantativeinc@gmail.com" class="btn btn-primary">Email Us</a>
-          <a href="#snippets" class="btn btn-secondary">View Code Snippets</a>
+    <div class="container hero-grid">
+      
+      <div class="hero-content">
+        <div class="badge-tag">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+          Local Aberdeen Web Design
         </div>
-      </div>
-      <div class="hero-preview">
-        <div class="code-card">
-          <div class="code-header">
-            <span>index.html</span>
+        
+        <h1>Sleek, bespoke web design crafted locally in <span>Aberdeen</span>.</h1>
+        
+        <p class="hero-lead">
+          Quantitive Inc creates fast, elegant websites and modern digital interfaces. We are based locally in Aberdeen with direct WhatsApp contact.
+        </p>
+
+        <div class="hero-actions">
+          <button onclick="openWhatsAppModal('Hi Quantitive Inc! I would like a quote for a new website in Aberdeen.')" class="btn btn-whatsapp">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-1.146 4.188 4.253-1.114z"/></svg>
+            <span>Start WhatsApp Chat</span>
+          </button>
+
+          <a href="#code-snippets" class="btn btn-outline">Explore Code & Layouts</a>
+        </div>
+
+        <div class="hero-trust-bar">
+          <div class="trust-item">
+            <span class="trust-num">100%</span>
+            <span class="trust-label">Bespoke Clean Code</span>
           </div>
-          <pre><code>&lt;header class="site-header"&gt;
-  &lt;h1&gt;Quantitative Inc.&lt;/h1&gt;
-  &lt;a href="mailto:quantativeinc@gmail.com"&gt;Contact&lt;/a&gt;
-&lt;/header&gt;</code></pre>
+          <div class="trust-item">
+            <span class="trust-num">Aberdeen</span>
+            <span class="trust-label">Local Company</span>
+          </div>
+          <div class="trust-item">
+            <span class="trust-num">Direct</span>
+            <span class="trust-label">+44 7880 019548</span>
+          </div>
         </div>
+      </div>
+
+      <!-- Hero Brand Preview Box -->
+      <div class="hero-card-preview">
+        <div class="palette-showcase-card">
+          
+          <div class="brand-card-header">
+            <div class="large-qi-mark">QI</div>
+            <div class="brand-title">Quantitive<br>Inc</div>
+          </div>
+
+          <p style="font-size: 13px; color: var(--color-text-muted); font-weight: 600; margin-top: 12px;">
+            Brand Palette • Local Aberdeen Web Studio
+          </p>
+
+          <div class="swatch-bar">
+            <div class="swatch-item">
+              <div class="swatch-color" style="background-color: #5E17EB;"></div>
+              <span class="swatch-hex">#5E17EB</span>
+            </div>
+            <div class="swatch-item">
+              <div class="swatch-color" style="background-color: #FAF0F5;"></div>
+              <span class="swatch-hex">#FAF0F5</span>
+            </div>
+            <div class="swatch-item">
+              <div class="swatch-color" style="background-color: #1E0A3C;"></div>
+              <span class="swatch-hex">#1E0A3C</span>
+            </div>
+            <div class="swatch-item">
+              <div class="swatch-color" style="background-color: #25D366;"></div>
+              <span class="swatch-hex">#25D366</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SERVICES SECTION -->
+  <section id="services" class="section">
+    <div class="container">
+      
+      <div class="section-title-wrap">
+        <div class="badge-tag">Services</div>
+        <h2 class="section-heading">Web Design Capabilities</h2>
+        <p class="section-desc">Tailored web design and layout architecture engineered for clients in Aberdeen.</p>
+      </div>
+
+      <div class="services-grid">
+        
+        <div class="service-card">
+          <div>
+            <div class="service-icon">💻</div>
+            <h3 class="service-title">Bespoke Web Design</h3>
+            <p class="service-desc">Tailor-made website layouts crafted with crisp visual styling and high typography contrast.</p>
+          </div>
+          <div class="service-tags">
+            <span class="service-tag">UX Layout</span>
+            <span class="service-tag">Sleek Design</span>
+            <span class="service-tag">Clean Hierarchy</span>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div>
+            <div class="service-icon">📱</div>
+            <h3 class="service-title">Responsive Development</h3>
+            <p class="service-desc">Fluid display across smartphones, tablets, and desktop monitors using lightweight, fast code.</p>
+          </div>
+          <div class="service-tags">
+            <span class="service-tag">Mobile First</span>
+            <span class="service-tag">Touch Friendly</span>
+            <span class="service-tag">Fast Speed</span>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div>
+            <div class="service-icon">📍</div>
+            <h3 class="service-title">Local Aberdeen SEO</h3>
+            <p class="service-desc">Search engine layout optimization ensuring local Aberdeen clients discover your business easily.</p>
+          </div>
+          <div class="service-tags">
+            <span class="service-tag">Aberdeen Local</span>
+            <span class="service-tag">Structured Code</span>
+            <span class="service-tag">Core Vitals</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CODE & WEBSITE SNIPPETS SECTION -->
+  <section id="code-snippets" class="section" style="background: rgba(255, 255, 255, 0.6);">
+    <div class="container">
+      
+      <div class="section-title-wrap">
+        <div class="badge-tag">Sample Architecture</div>
+        <h2 class="section-heading">Sample Website & Code Snippets</h2>
+        <p class="section-desc">Examine snippets of our clean HTML structure, custom CSS design system, and Java server logic.</p>
+      </div>
+
+      <div class="portfolio-grid">
+        
+        <!-- Snippet 1 -->
+        <div class="portfolio-card">
+          <div class="portfolio-preview-box" style="background: linear-gradient(135deg, #5E17EB 0%, #1E0A3C 100%);">
+            <span class="portfolio-cat">HTML Snippet</span>
+            <div class="portfolio-location">
+              💻 Clean Semantic Structure
+            </div>
+          </div>
+          <div class="portfolio-body">
+            <div>
+              <h3 class="portfolio-title">Semantic HTML Layout</h3>
+              <p class="portfolio-desc">High-contrast, accessible HTML markup structured for fast rendering and search engine crawling.</p>
+              <pre style="background: #1E0A3C; color: #FAF0F5; padding: 12px; border-radius: 8px; font-size: 11px; overflow-x: auto; margin-top: 10px;"><code>&lt;header class="site-header"&gt;
+  &lt;a href="#" class="brand-logo"&gt;
+    &lt;div class="logo-icon"&gt;QI&lt;/div&gt;
+    &lt;span&gt;Quantitive Inc&lt;/span&gt;
+  &lt;/a&gt;
+&lt;/header&gt;</code></pre>
+            </div>
+            <button onclick="openWhatsAppModal('Hi Quantitive Inc! I would like to discuss clean HTML layout architecture for my project.')" class="btn btn-outline" style="width: 100%; font-size: 13px; margin-top: 16px;">Inquire About Web Layouts</button>
+          </div>
+        </div>
+
+        <!-- Snippet 2 -->
+        <div class="portfolio-card">
+          <div class="portfolio-preview-box" style="background: linear-gradient(135deg, #1E0A3C 0%, #4C0ED1 100%);">
+            <span class="portfolio-cat">CSS Snippet</span>
+            <div class="portfolio-location">
+              🎨 Quantitive Inc Palette
+            </div>
+          </div>
+          <div class="portfolio-body">
+            <div>
+              <h3 class="portfolio-title">Pure CSS Design Tokens</h3>
+              <p class="portfolio-desc">Brand color variables extracted directly from our logo palette for cohesive visual hierarchy.</p>
+              <pre style="background: #1E0A3C; color: #FAF0F5; padding: 12px; border-radius: 8px; font-size: 11px; overflow-x: auto; margin-top: 10px;"><code>:root {
+  --color-brand-purple: #5E17EB;
+  --color-bg-canvas: #FAF0F5;
+  --color-text-dark: #1E0A3C;
+  --color-whatsapp: #25D366;
+}</code></pre>
+            </div>
+            <button onclick="openWhatsAppModal('Hi Quantitive Inc! Can you build a custom CSS design system for my brand?')" class="btn btn-outline" style="width: 100%; font-size: 13px; margin-top: 16px;">Inquire About Styling</button>
+          </div>
+        </div>
+
+        <!-- Snippet 3 -->
+        <div class="portfolio-card">
+          <div class="portfolio-preview-box" style="background: linear-gradient(135deg, #3A0CA3 0%, #10002B 100%);">
+            <span class="portfolio-cat">Java Snippet</span>
+            <div class="portfolio-location">
+              ☕ Java HTTP Server Backend
+            </div>
+          </div>
+          <div class="portfolio-body">
+            <div>
+              <h3 class="portfolio-title">Java HttpServer Handler</h3>
+              <p class="portfolio-desc">Lightweight Java server component delivering rapid static file responses without dependencies.</p>
+              <pre style="background: #1E0A3C; color: #FAF0F5; padding: 12px; border-radius: 8px; font-size: 11px; overflow-x: auto; margin-top: 10px;"><code>HttpServer server = HttpServer.create(
+  new InetSocketAddress(3000), 0
+);
+server.createContext("/", new StaticHandler());
+server.start();</code></pre>
+            </div>
+            <button onclick="openWhatsAppModal('Hi Quantitive Inc! I want to discuss a lightweight Java backend implementation.')" class="btn btn-outline" style="width: 100%; font-size: 13px; margin-top: 16px;">Inquire About Java Backend</button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- BRAND PALETTE SHOWCASE -->
+  <section id="palette" class="section">
+    <div class="container">
+      
+      <div class="section-title-wrap">
+        <div class="badge-tag">Brand Colors</div>
+        <h2 class="section-heading">Brand Color Palette</h2>
+        <p class="section-desc">Extracted directly from the Quantitive Inc mark for strict visual harmony.</p>
+      </div>
+
+      <div style="background: #FFFFFF; border-radius: var(--radius-lg); padding: 40px; border: 1px solid rgba(94, 23, 235, 0.12); box-shadow: var(--shadow-card); max-width: 800px; margin: 0 auto;">
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 20px; text-align: center;">
+          
+          <div>
+            <div style="height: 100px; background-color: #5E17EB; border-radius: 16px; margin-bottom: 12px; box-shadow: 0 8px 20px rgba(94, 23, 235, 0.25);"></div>
+            <h4 style="font-size: 16px; font-weight: 800;">Brand Purple</h4>
+            <span style="font-family: monospace; font-weight: 700; font-size: 13px; color: var(--color-brand-purple);">#5E17EB</span>
+            <p style="font-size: 12px; color: var(--color-text-muted); margin-top: 4px;">Primary Logo Color</p>
+          </div>
+
+          <div>
+            <div style="height: 100px; background-color: #FAF0F5; border-radius: 16px; margin-bottom: 12px; border: 1px solid rgba(0,0,0,0.08);"></div>
+            <h4 style="font-size: 16px; font-weight: 800;">Soft Canvas</h4>
+            <span style="font-family: monospace; font-weight: 700; font-size: 13px; color: var(--color-text-dark);">#FAF0F5</span>
+            <p style="font-size: 12px; color: var(--color-text-muted); margin-top: 4px;">Background Canvas</p>
+          </div>
+
+          <div>
+            <div style="height: 100px; background-color: #1E0A3C; border-radius: 16px; margin-bottom: 12px;"></div>
+            <h4 style="font-size: 16px; font-weight: 800;">Deep Plum</h4>
+            <span style="font-family: monospace; font-weight: 700; font-size: 13px; color: #1E0A3C;">#1E0A3C</span>
+            <p style="font-size: 12px; color: var(--color-text-muted); margin-top: 4px;">Headings & Text</p>
+          </div>
+
+          <div>
+            <div style="height: 100px; background-color: #25D366; border-radius: 16px; margin-bottom: 12px; box-shadow: 0 8px 20px rgba(37, 211, 102, 0.25);"></div>
+            <h4 style="font-size: 16px; font-weight: 800;">WhatsApp Green</h4>
+            <span style="font-family: monospace; font-weight: 700; font-size: 13px; color: #25D366;">#25D366</span>
+            <p style="font-size: 12px; color: var(--color-text-muted); margin-top: 4px;">WhatsApp Action</p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- WHATSAPP INTERACTIVE SNIPPET SECTION -->
+  <section id="whatsapp" class="section">
+    <div class="container">
+      
+      <div class="whatsapp-cta-banner">
+        
+        <div class="whatsapp-cta-content">
+          <h2>Direct WhatsApp Contact</h2>
+          <p>Chat directly with Quantitive Inc on WhatsApp (+44 7880 019548) to discuss your web design project or ask any questions.</p>
+          
+          <div style="display: flex; flex-direction: column; gap: 12px; font-size: 14px;">
+            <div style="display: flex; align-items: center; gap: 10px;">
+              <span style="width: 20px; height: 20px; background: rgba(37, 211, 102, 0.2); color: #25D366; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 12px;">✓</span>
+              <span>Direct WhatsApp number: +44 7880 019548</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 10px;">
+              <span style="width: 20px; height: 20px; background: rgba(37, 211, 102, 0.2); color: #25D366; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 12px;">✓</span>
+              <span>Local web design company in Aberdeen</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 10px;">
+              <span style="width: 20px; height: 20px; background: rgba(37, 211, 102, 0.2); color: #25D366; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 12px;">✓</span>
+              <span>Pre-filled templates for rapid chat initialization</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive WhatsApp Snippet Box -->
+        <div class="whatsapp-widget-box">
+          <div class="widget-header">
+            <div class="widget-avatar">QI</div>
+            <div class="widget-title-wrap">
+              <h4>Quantitive Inc Studio</h4>
+              <p>● Active on WhatsApp • +44 7880 019548</p>
+            </div>
+          </div>
+
+          <label style="font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.06em; color: var(--color-text-muted); display: block; margin-bottom: 8px;">
+            Select Inquiry Topic:
+          </label>
+          
+          <div class="template-buttons">
+            <button class="tmpl-btn active" onclick="setTemplate(0, this)">🚀 New Web Design Project</button>
+            <button class="tmpl-btn" onclick="setTemplate(1, this)">📱 Website Redesign Inquiry</button>
+            <button class="tmpl-btn" onclick="setTemplate(2, this)">📍 Local Aberdeen Project Chat</button>
+          </div>
+
+          <label style="font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.06em; color: var(--color-text-muted); display: block; margin-bottom: 6px;">
+            Message Preview:
+          </label>
+          <textarea id="whatsappTextarea" class="widget-textarea" rows="3">Hi Quantitive Inc! I am based in Aberdeen and would like a quote for a new web design project.</textarea>
+
+          <button onclick="sendCustomWhatsApp()" class="btn btn-whatsapp" style="width: 100%;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-1.146 4.188 4.253-1.114z"/></svg>
+            <span>Open in WhatsApp</span>
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ABERDEEN LOCAL STUDIO -->
+  <section id="about" class="section">
+    <div class="container" style="text-align: center; max-width: 720px;">
+      <div class="badge-tag">Local Studio</div>
+      <h2 class="section-heading">Based Locally in Aberdeen</h2>
+      <p style="font-size: 18px; color: var(--color-text-muted); margin-bottom: 24px;">
+        Quantitive Inc is a web design company based locally in Aberdeen, Scotland. We craft bespoke websites and digital experiences with clean Java, HTML, and CSS code.
+      </p>
+      <div style="background: #FFFFFF; border-radius: var(--radius-md); padding: 20px 28px; border: 1px solid rgba(94, 23, 235, 0.12); display: inline-flex; align-items: center; gap: 12px; font-weight: 700; color: var(--color-text-dark);">
+        <span style="color: var(--color-brand-purple); font-size: 20px;">📍</span>
+        <span>Aberdeen, Scotland • WhatsApp: +44 7880 019548</span>
       </div>
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="contact-section">
-    <div class="container">
-      <h2>Contact Quantitative Inc.</h2>
-      <p>Send your project details directly to: <a href="mailto:quantativeinc@gmail.com"><strong>quantativeinc@gmail.com</strong></a></p>
-    </div>
-  </section>
-
-  <!-- Footer -->
+  <!-- FOOTER -->
   <footer class="site-footer">
     <div class="container">
-      <p>&copy; 2026 Quantitative Inc. Based in Aberdeen, Scotland.</p>
+      <div class="footer-grid">
+        
+        <div class="footer-brand">
+          <div class="brand-logo">
+            <div class="logo-icon">QI</div>
+            <div class="logo-text-wrap">
+              <span class="brand-name">Quantitive Inc</span>
+            </div>
+          </div>
+          <p class="footer-desc">
+            Local web design company based in Aberdeen, Scotland. Custom web design built using pure Java, HTML, and CSS.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#code-snippets">Code Snippets</a></li>
+            <li><a href="#palette">Color Palette</a></li>
+            <li><a href="#about">Local Studio</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">WhatsApp Contact</h4>
+          <ul class="footer-links">
+            <li><a href="javascript:void(0)" onclick="openWhatsAppModal('Hi Quantitive Inc!')">+44 7880 019548</a></li>
+            <li><span style="opacity: 0.6;">Aberdeen, Scotland, UK</span></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 Quantitive Inc. Based locally in Aberdeen, Scotland.</span>
+        <span>Built with Java, HTML & CSS</span>
+      </div>
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <!-- FLOATING WHATSAPP BUTTON & POPUP MODAL -->
+  <button class="whatsapp-floating-btn" onclick="toggleWhatsAppModal()" aria-label="Open WhatsApp Chat">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-1.146 4.188 4.253-1.114z"/></svg>
+  </button>
+
+  <div id="whatsappPopupModal" class="whatsapp-popup-modal">
+    <div class="popup-header">
+      <div class="popup-header-info">
+        <div style="width: 36px; height: 36px; background: rgba(255,255,255,0.2); border-radius: 10px; display: flex; align-items: center; justify-content: center; font-weight: 900;">QI</div>
+        <div>
+          <h4 style="font-size: 15px; font-weight: 800;">Quantitive Inc</h4>
+          <span style="font-size: 11px; opacity: 0.9;">Aberdeen • +44 7880 019548</span>
+        </div>
+      </div>
+      <button class="popup-close-btn" onclick="closeWhatsAppModal()">✕</button>
+    </div>
+    
+    <div class="popup-body">
+      <p style="font-size: 13px; color: var(--color-text-dark); margin-bottom: 12px; font-weight: 600;">
+        👋 Hello! Send a direct message to Quantitive Inc on WhatsApp (+44 7880 019548):
+      </p>
+      
+      <textarea id="popupTextarea" class="widget-textarea" rows="3">Hi Quantitive Inc! I would like to inquire about web design services in Aberdeen.</textarea>
+
+      <button onclick="sendPopupWhatsApp()" class="btn btn-whatsapp" style="width: 100%;">
+        <span>Launch WhatsApp Chat</span>
+      </button>
+    </div>
+  </div>
+
+  <script>
+    const templates = [
+      "Hi Quantitive Inc! I am based in Aberdeen and would like a quote for a new web design project.",
+      "Hello! I have an existing website in Aberdeen that needs a modern, sleek redesign. Can we chat on WhatsApp?",
+      "Hello Quantitive Inc, I would like to chat regarding a local web design project in Aberdeen."
+    ];
+
+    const companyWhatsAppNumber = "447880019548";
+
+    function setTemplate(index, btnElement) {
+      document.getElementById('whatsappTextarea').value = templates[index];
+      const buttons = document.querySelectorAll('.tmpl-btn');
+      buttons.forEach(b => b.classList.remove('active'));
+      btnElement.classList.add('active');
+    }
+
+    function sendCustomWhatsApp() {
+      const text = document.getElementById('whatsappTextarea').value;
+      const url = `https://wa.me/${companyWhatsAppNumber}?text=${encodeURIComponent(text)}`;
+      window.open(url, '_blank');
+    }
+
+    function sendPopupWhatsApp() {
+      const text = document.getElementById('popupTextarea').value;
+      const url = `https://wa.me/${companyWhatsAppNumber}?text=${encodeURIComponent(text)}`;
+      window.open(url, '_blank');
+      closeWhatsAppModal();
+    }
+
+    function toggleWhatsAppModal() {
+      const modal = document.getElementById('whatsappPopupModal');
+      modal.classList.toggle('show');
+    }
+
+    function openWhatsAppModal(customMsg) {
+      const modal = document.getElementById('whatsappPopupModal');
+      if (customMsg) {
+        document.getElementById('popupTextarea').value = customMsg;
+      }
+      modal.classList.add('show');
+    }
+
+    function closeWhatsAppModal() {
+      const modal = document.getElementById('whatsappPopupModal');
+      modal.classList.remove('show');
+    }
+  </script>
+
 </body>
 </html>
